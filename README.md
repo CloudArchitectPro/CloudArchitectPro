@@ -26,6 +26,17 @@ Live production SaaS for Indian equity markets — momentum, mean reversion, vol
 - Broker-connected trade execution (manual-confirm, kill-switch gated)
 - Stack: Next.js, TypeScript, PostgreSQL (Supabase), Vercel
 
+### JobPilot — Job Search Automation Platform
+
+Personal-use SaaS (Next.js, Vercel, Supabase/PostgreSQL with RLS, Cloudflare R2) automating end-to-end job search operations — built to solve my own job search, and open-sourced select components as a showcase.
+
+- Multi-source job ingestion pipeline (Adzuna, Jooble, USAJOBS APIs) with dual-trigger scheduling and fingerprint-based deduplication across concurrent local + remote/international search queries
+- AI-assisted resume/cover-letter tailoring engine (DeepSeek API) with strict fidelity guardrails — reconciliation logic reverts any AI-rewritten content where numeric claims diverge from the verified original
+- Cloudflare R2 document storage layer with owner-scoped object keys, on-demand generation with signed-URL caching, and cache invalidation tied to content-regeneration events
+- Postgres Row-Level Security across all tables for per-user data isolation
+
+📂 [Showcase repo](https://github.com/CloudArchitectPro/jobpilot-showcase) — curated, redacted code samples demonstrating the architecture above (full app is private)
+
 ### distributed-sync-mesh — Geo-Distributed Infrastructure Lab
 Zero-open-port, zero-trust file sync spanning two continents (USA + India, via a Raspberry Pi 5 relay).
 - WireGuard/Tailscale mesh VPN, mutual authentication, encrypted transit
