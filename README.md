@@ -26,7 +26,7 @@ Live production SaaS for Indian equity markets — momentum, mean reversion, vol
 - Broker-connected trade execution (manual-confirm, kill-switch gated)
 - Stack: Next.js, TypeScript, PostgreSQL (Supabase), Vercel
 
-### JobPilot — Job Search Automation Platform
+### [JobPilot](https://jobs.naveen.cloud) — Job Search Automation Platform
 
 Personal-use SaaS (Next.js, Vercel, Supabase/PostgreSQL with RLS, Cloudflare R2) automating end-to-end job search operations — built to solve my own job search, and open-sourced select components as a showcase.
 
